@@ -10,37 +10,21 @@
 <meta name="description" content="Free Auto Loan Calculator for Your website. Give your website visitors an easy way to calculate auto loan amounts, interest rates, and payments. Easy to use cut and paste code provided." />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/colors/js_color_picker_v2.css" media="screen"/>
-<script type="text/javascript" src="/colors/color_functions.js"></script>		
+<script type="text/javascript" src="/colors/color_functions.js"></script>   
 <script type="text/javascript" src="/colors/js_color_picker_v2.js"></script>
 
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" language="javascript">
-function generatecode()
-{
-var newcode = '<div id="auto-calculator" style="text-align:center; width:235px;height:235px; padding:5px;';
-if(document.getElementById("bcolorc").value.replace("#","").length >= 3 && document.getElementById("bcolorc").value != 'Default'){ newcode = newcode +' background-color:#' + document.getElementById("bcolorc").value.replace("#","") + ';';}
-newcode = newcode + '" >\n <a target="_blank" style="text-decoration:none;font:bold 14px Arial, Helvetica, sans-serif;';
-if(document.getElementById("tcolorc").value.replace("#","").length >= 3 && document.getElementById("tcolorc").value != 'Default'){ newcode = newcode + 'color:#' + document.getElementById("tcolorc").value.replace("#","") + ';';}
-newcode = newcode + '" href="http://www.frograte.com/auto-loan-calculator/">Auto Loan Calculator</a><br />\n <iframe src="http://www.frograte.com/calculator.asp?t=2';
-if(document.getElementById("tcolorc").value.replace("#","").length >= 3 && document.getElementById("tcolorc").value != 'Default'){ newcode = newcode + '&ct=' + document.getElementById("tcolorc").value.replace("#","");}
-if(document.getElementById("bcolorc").value.replace("#","").length >= 3 && document.getElementById("bcolorc").value != 'Default'){ newcode = newcode + '&cb=' + document.getElementById("bcolorc").value.replace("#","");}
-newcode = newcode + '" height="200" width="235" frameborder="0" allowtransparency="true"></iframe></div>';
-document.getElementById("icode").value = newcode;
-}
-function clearcolors()
-{document.getElementById("bcolorc").value='Default';
-document.getElementById("tcolorc").value='Default';
-generatecode();
-}
 
 </script>
-<script type="text/javascript">    var d = new Date(); var __u = getCookie("__utmc"); if (typeof __u == "undefined" || !__u) __u = -1; function getCookie(c_name) { var i, x, y, cs = document.cookie.split(";"); for (i = 0; i < cs.length; i++) { x = cs[i].substr(0, cs[i].indexOf("=")); y = cs[i].substr(cs[i].indexOf("=") + 1); x = x.replace(/^\s+|\s+$/g, ""); if (x == c_name) { return unescape(y); } } } function gaq() { var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true; ga.src = "/ga.php?id=" + __u + "&p=" + document.location.pathname + "&q=" + encodeURIComponent(document.location.search) + "&r=" + encodeURIComponent(document.referrer).replace(/http%3A%2F%2F/i, "").replace(/https%3A%2F%2F/i, "") + "&h=" + document.location.hostname + "&_=" + d.getTime(); var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s); } gaq();</script>
+<script type="text/javascript">    var d = new Date(); var __u = getCookie("__utmc"); if (typeof __u == "undefined" || !__u) __u = -1; function getCookie(c_name) { var i, x, y, cs = document.cookie.split(";"); for (i = 0; i < cs.length; i++) { x = cs[i].substr(0, cs[i].indexOf("=")); y = cs[i].substr(cs[i].indexOf("=") + 1); x = x.replace(/^\s+|\s+$/g, ""); if (x == c_name) { return unescap(y); } } } function gaq() { var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true; ga.src = "/ga.php?id=" + __u + "&p=" + document.location.pathname + "&q=" + encodeURIComponent(document.location.search) + "&r=" + encodeURIComponent(document.referrer).replace(/http%3A%2F%2F/i, "").replace(/https%3A%2F%2F/i, "") + "&h=" + document.location.hostname + "&_=" + d.getTime(); var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s); } gaq();
+</script>
 </head>
 <body>
     <div id="right-column">
       <div id="main-image"></div>
       <div class="sidebar">
-        <h3>Monthly Loan$$</h3>
+        <h3>Monthly Loan</h3>
         <iframe src="http://www.frograte.com/calculator.asp?t=2" height="200" width="235" frameborder="0" allowtransparency="true"></iframe> 
          <div class="box">
         
@@ -50,7 +34,6 @@ generatecode();
   <hr>
   <div id="footer">
   Copyright &copy; 2020-2021 Mao EM.  All rights reserved.<br />
- <a href="www.happyfamilypawn.com">Home</a> | <a href="www.happyfamilypawn.com">Blog</a> | <a href="/privacy-policy/" >Privacy Policy</a> | <a href="/terms/">Terms of Use</a> | <a href="/contact">Contact Us</a>
   </div>
 </div>
 </body>
