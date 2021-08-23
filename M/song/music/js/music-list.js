@@ -62,25 +62,31 @@ let allMusic = [
     name: "ជាតិនេះឆាចោល",
     artist: "New Album",
     img: "music-9",
-    src: "music-8"
+    src: "music-8-C1"
   },
       {
     name: "កែវ សារ៉ាត់(ស្រណោះដីខ្មែរ",
     artist: "New Album",
     img: "music-10",
-    src: "music-8"
+    src: "music-8-C2"
   },
       {
     name: "ប៉ាក់ប៉ុងៗ Remix",
     artist: "New Album",
     img: "music-11",
-    src: "music-8"
+    src: "music-8-C3"
   },
-  {
+    {
     name: "កំពុងUpload បន្ថែមសូមអរគុណ",
     artist: "New Album",
     img: "music-12",
-    src: "music-8"
+    src: "music-8-C4"
+
+  },
+     { name: "កំពុងUpload បន្ថែមសូមអរគុណ",
+    artist: "New Album",
+    img: "music-12",
+    src: "music-8-C4"
 
   },
 
