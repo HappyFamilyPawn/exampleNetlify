@@ -71,7 +71,7 @@ let allMusic = [
     src: "music-10"
   },
       {
-    name: "គេងទៅៗមនុស្សសត្វទាំងឡាយ",
+    name: "ប៉ាក់ប៉ុងៗ Remix",
     artist: "New Album",
     img: "music-11",
     src: "music-11"
