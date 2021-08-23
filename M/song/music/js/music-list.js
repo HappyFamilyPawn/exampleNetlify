@@ -70,6 +70,13 @@ let allMusic = [
     img: "music-10",
     src: "music-10"
   },
+      {
+    name: "គេងទៅៗមនុស្សសត្វទាំងឡាយ",
+    artist: "New Album",
+    img: "music-11",
+    src: "music-11"
+  },
+
 
   // like this paste it and remember to give comma after ending of this bracket }
   // {
