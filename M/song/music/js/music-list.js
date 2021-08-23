@@ -53,19 +53,19 @@ let allMusic = [
     src: "music-7"
   },
       {
-    name: "គេងទៅៗមនុស្សសត្វទាំងឡាយ",
+    name: "រំដួលដងស្ទឹងសង្កែ",
     artist: "New Album",
     img: "music-8",
     src: "music-8"
   },
       {
-    name: "គេងទៅៗមនុស្សសត្វទាំងឡាយ",
+    name: "ជាតិនេះឆាចោល",
     artist: "New Album",
     img: "music-9",
     src: "music-9"
   },
       {
-    name: "គេងទៅៗមនុស្សសត្វទាំងឡាយ",
+    name: "កែវ សារ៉ាត់(ស្រណោះដីខ្មែរ",
     artist: "New Album",
     img: "music-10",
     src: "music-10"
