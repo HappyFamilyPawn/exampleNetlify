@@ -87,6 +87,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .table_header ul li .item {
@@ -107,7 +108,6 @@ body {
   padding: 5px 20px;
   border-radius: 25px;
   max-width: 115px;
-  display: inline-block;
   cursor: pointer;
 }
 
