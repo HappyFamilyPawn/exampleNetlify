@@ -108,6 +108,7 @@ body {
   border-radius: 25px;
   max-width: 115px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .table_body ul li .item .open {
