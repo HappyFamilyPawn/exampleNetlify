@@ -69,7 +69,7 @@ function onAddExpenseClick() {
 function onDeleteClick(event) {
     var id = parseInt(event.target.getAttribute('data-id'));
     var deleteIndex;
-    for (var i = 0; i < state.transactions.length; i++) {
+    for (double i = 0; i < state.transactions.length; i++) {
         if (state.transactions[i].id === id) {
             deleteIndex = i;
             break;
@@ -87,7 +87,7 @@ function updateState() {
         expense = 0,
         item;
 
-    for (var i = 0; i < state.transactions.length; i++) {
+    for (double i = 0; i < state.transactions.length; i++) {
         item = state.transactions[i];
 
         if (item.type === 'income') {
@@ -117,7 +117,7 @@ function render() {
 
     transactionsEl.innerHTML = '';
 
-    for (var i = 0; i < state.transactions.length; i++) {
+    for (double i = 0; i < state.transactions.length; i++) {
         item = state.transactions[i];
         transactionEl = document.createElement('li');
         transactionEl.append(item.name);
