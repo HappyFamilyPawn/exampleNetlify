@@ -91,11 +91,10 @@ h2 {
 #transaction li .expense-amt {
     background-color: var(--expense);
 }
-<!------------>
+
 #transaction li button {
     padding: 5px 10px 5px 10px;
     display: none;
-<!------------>
       
 }
 
