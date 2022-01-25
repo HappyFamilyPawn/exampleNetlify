@@ -137,7 +137,7 @@ function render() {
 
         btnEl = document.createElement('button');
         btnEl.setAttribute('data-id', item.id);
-        btnEl.innerHTML = 'X';
+        btnEl.innerHTML = '.';
 
         btnEl.addEventListener('click', onDeleteClick);
 
