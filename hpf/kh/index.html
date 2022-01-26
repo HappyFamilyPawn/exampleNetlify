@@ -832,7 +832,101 @@
         padding-top: 25px;
     }
 </style>
+<script>
+    $(document).ready(function() {
+        
+        $("#btnUpdateProfile").on("click", function(e) {
+            e.preventDefault();
 
+            // Get form
+            var form = $('#frmEditProfile')[0];
+
+            // FormData object 
+            var data = new FormData(form);
+
+            // If you want to add an extra field for the FormData
+            data.append("_token", "A8aT12n1zvXL4wWSU37BwxlGpRM9qcYZZYpHA7lw");
+            data.append("user_id", "");
+
+            // disabled the submit button
+            $("#btnUpdateProfile").prop("disabled", true);
+
+            console.log("prepare data: " + data);
+            
+            $.ajax({
+                url: 'https://www.mekongmicroinsurance.com.kh/km/update-profile',
+                method: "POST",
+                enctype: 'multipart/form-data',
+                data: data,
+                // Tell jQuery not to process the sent data
+                processData : false, 
+                // Tell jQuery not to set the Content-Type request header
+                contentType : false,
+                dataType: 'JSON',
+                success: function (data) {
+                    console.log("SUCCESS : ", data);
+                    if (data.status === "success") {
+                        $("#output").addClass("alert alert-success");
+                        $("#output").text("Updated Successful");
+                        $("#btnUpdateProfile").prop("disabled", false);
+                    } else {
+                        $("#output").addClass("alert alert-warning");
+                        $("#output").text(data.data);
+                        $("#btnUpdateProfile").prop("disabled", false);
+                    }
+                    
+                },
+                error: function (err) {
+                    console.log("ERROR : ", err);
+                }
+            });
+
+        })
+        
+    });
+</script>
+    </div>
+
+
+    <script type="text/javascript">
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+
+        function showMe() {
+
+            $('.hide-me').each(function(i) {
+
+                let top_of_object = $(this).offset().top;
+                let bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if (bottom_of_window > top_of_object)
+                    $(this).animate({
+                        'opacity': '1'
+                    }, 500);
+            });
+        }
+
+        $(document).ready(function() {
+            /* Show sub menu on hover */
+            // $('.dropdown').hover(function(){
+            //     $(this).find('a').dropdown('show');
+            // });
+
+            $('.carousel').carousel()
+            showMe();
+            $(window).scroll(function() {
+                showMe();
+            });
+
+        });
+
+        window.onload = function() {
+            $('.sub-body').fadeIn();
+        };
+    </script>
 </body>
 
 </html>
