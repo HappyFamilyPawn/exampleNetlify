@@ -1,0 +1,3 @@
+color code: for footer:#021c3c;
+yellow:#ffbb38;
+blue color:#003679;
