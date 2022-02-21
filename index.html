@@ -1,12 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     
     <title>ក្រុមហ៊ុន បញ្ចាំគ្រួសាររីករាយ</title>
     <!-- Favicon -->
@@ -18,7 +16,6 @@
     <meta name="csrf-token" content="A8aT12n1zvXL4wWSU37BwxlGpRM9qcYZZYpHA7lw">
     <link href="https://fonts.googleapis.com/css?family=Hanuman:400,700&amp;subset=khmer" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Moul&amp;subset=khmer" rel="stylesheet">
-
     <!-- Favi icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favi/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favi/favicon-32x32.png">
@@ -77,180 +74,21 @@
     <link rel="stylesheet" href="https://www.mekongmicroinsurance.com.kh/sweetalert2/sweetalert2.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Hanuman:400,700&amp;subset=khmer" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Moul&amp;subset=khmer" rel="stylesheet">
-<!-- <link rel="shortcut icon" href="https://www.mekongmicroinsurance.com.kh/img_default/favorite-icon.png"> -->
+    <link href="https://fonts.googleapis.com/css?family=Moul&amp;subset=khmer" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="https://www.mekongmicroinsurance.com.kh/img_default/favorite-icon.png"> -->
+    
+    <!-- Bootstrap CSS 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="    sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- Font Awesome 5.15.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="    sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Sweet alert -->
+    <!-- <script src="https://unpkg.com/sweetalert@2.1.0/dist/sweetalert.min.js"></script> -->
+    
 
-<!-- Bootstrap CSS 4.6-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-<!-- Font Awesome 5.15.2-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
-<!-- Sweet alert -->
-<!-- <script src="https://unpkg.com/sweetalert@2.1.0/dist/sweetalert.min.js"></script> -->
-
-<style>
-    .text-border-bttom {
-        border-bottom: 2px solid #4A9ED5;
-    }
-
-    .space-top-small {
-        margin-top: 12px;
-    }
-
-    .space-top-meduim {
-        margin-top: 24px;
-    }
-
-    .space-top-large {
-        margin-top: 32px;
-    }
-    .space-bottom-small {
-        margin-bottom: 16px;
-    }
-
-    .space-offset-small {
-        margin: 12px;
-    }
-
-    .space-left-tiny {
-        margin-left: 6px;
-    }
-
-
-    /** Global style */
-    body{
-        /*background-repeat: repeat;*/
-        background-attachment: fixed;
-        font-family: 'Kantumruy', sans-serif;
-        /*background-image: url('/images/bg-gray.png');*/
-    }
-    .pharagraph-height-content{
-        line-height: 1rem;
-    }
-    .pharagraph-height{
-        line-height: 2rem;
-    }
-    .pharagraph-indent{
-        text-indent: 3rem;
-    }
-    .title-underline{
-        text-decoration: underline #4A9ED5 2px;
-        text-underline-position: under
-    }
-    .horizontal-line{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border: 0;
-        border-top: 1px solid #ECA542;
-    }
-    .hide-me{
-        opacity:0;
-    }
-
-    /* Button and input Search*/
-    .button-submit {
-        border-radius: 10px 10px 10px 10px !important;
-        margin-top: 20px;
-        float: right;
-        width: 90px;
-        color: #818182 !important;
-    }
-
-    .button-search{
-        color: gray;
-        border: 1px solid #ccc;
-        background-color: #fff !important;
-    }
-    .button-search:hover{
-        border: 1px solid #ccc;
-        color: whitesmoke !important;
-        background-color: #4A9ED5 !important;
-    }
-    .input-search:focus{
-        border-color: #4A9ED5;
-        box-shadow: 0px 0px 1px #4A9ED5;
-    }
-
-    /* Core value */
-    .bg-core-value{
-        background-color: #cccccc5c;
-    }
-
-    /* Footer */
-    .footer{
-        padding-top: 32px;
-        background: #003679;
-        padding-bottom: 32px;
-    }
-    .footer-input{
-        color: #fff;
-        border: 2px solid #fff;
-        background-color: #ECA542 !important;
-    }
-    .footer-input:focus {
-        color: #fff;
-        border-color: #fff;
-        box-shadow: 0px 0px 5px #fff;
-    }
-    .footer-button-submit{
-        width: 100px;
-        color: #ECA542;
-        background-color:#003679;
-    }
-    .footer-button-submit:hover{
-        width: 100px;
-        color: #ffbb38;
-        background-color: #ECA542;
-    }
-
-    .padding-modal-header {
-        padding: 40px 120px 0 120px;
-        border-bottom: 0;
-    }
-
-    .padding-modal-body {
-        padding: 70px 120px;
-    }
-
-    .margin-form-control {
-        margin-bottom: 25px;
-    }
-
-    .my-link:link, .my-link::visited{
-        color: #000;
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    .my-link:hover{
-        color: #EAA7A7 !important;
-        text-decoration: none;
-    }
-
-    .required:after {
-        content:" *";
-        color: red;
-    }
-</style>
-
-
-
-<style>
-    .gallery-item {
-        margin: 20px 10px 0px 10px;
-        width: 200px;
-        height: 200px;
-        /*object-fit: cover;*/
-        border-radius: 5px;
-    }
-
-    .gallery-item:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
-</style>
-
-</head>
+</head> 
 
 <body>
         
@@ -268,27 +106,7 @@
 
         <!-- header -->
         <div class="container">
-            <style>
-    /* For menu only */
-    .custom-menu-active {
-        background-color: #ffbb38;
-        color: whitesmoke !important;
-    }
 
-    .custom-menu {
-        background-color: #fff !important;
-    }
-
-    .nav-item a:hover {
-        background-color: #003679 !important;
-        color: whitesmoke !important;
-    }
-
-    .nav-item a:focus {
-        background-color: #4A9ED5 !important;
-        color: whitesmoke !important;
-    }
-</style>
 <div>
 
     <nav class="navbar navbar-expand-lg navbar-light p-0 mt-4">
@@ -571,34 +389,6 @@
 
 </div>
 
-
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 40px;
-        padding: 0;
-    }
-
-    .grid-container > div {
-        height: 300px;
-        border-radius: 5px;
-        border-color: gray;
-    }
-
-    .grid-container > div:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
-
-    .grid-item-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-</style>
-
 </div>
 
         <!-- footer -->
@@ -618,22 +408,22 @@
                         </div>
                         <div class="col-12 col-md-6">
                             
-                            <p class="text-white">
-                                <a href="https://web.facebook.com/HappyFamilyPawn" class="text-white" target="_blank" ><i class="fab fa-instagram"></i> HPF_Finance Co.,Ltd. </a>
-                            </p>
-                            
-                            <p class="text-white">
+                                <p class="text-white">
+                                    <a href="https://web.facebook.com/HappyFamilyPawn" class="text-white" target="_blank" ><i class="fab     fa-instagram"></i> HPF_Finance Co.,Ltd. </a>
+                                </p>
+                                
+                                <p class="text-white">
                                 <a href="https://web.facebook.com/HappyFamilyPawn" class="text-white" target="_blank"><i class="fab fa-facebook"></i></a>
                                 <a href="https://web.facebook.com/HappyFamilyPawn/" class="text-white" target="_blank"><i class="far fa-play-circle"></i></a>
                                 <a href="https://web.facebook.com/HappyFamilyPawn/" class="text-white" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="https://web.facebook.com/HappyFamilyPawn/" class="text-white" target="_blank"><i class="fab fa-telegram"></i> HPF Finance Co.,Ltd. </a>
-                            </p>
-                            
-                            <p class="text-white"><i class="far fa-envelope"></i>
-                                <a href="mailto:info@hpffinance.com.kh" class="text-white" target="_blank">info@hpffinance.com.kh</a>
-                            </p>
-                            
-                            <p class="text-white"><i class="fas fa-globe"></i>
+                                </p>
+                                
+                                <p class="text-white"><i class="far fa-envelope"></i>
+                                    <a href="mailto:info@hpffinance.com.kh" class="text-white" target="_blank">info@hpffinance.com.kh</a>
+                                </p>
+                                
+                                <p class="text-white"><i class="fas fa-globe"></i>
                                 <a href="http://www.happyfamilypawn.com" class="text-white" target="_blank">www.happyfamilypawn.com</a>
                             </p>
                         </div>
@@ -648,20 +438,20 @@
                     <h4 class="text-white">ទំនាក់ទំនង</h4>
 
                     <form id="frmContact" method="POST" action="https://www.cognitoforms.com/HPFFinance/HPFFinance">
-                        <input type="hidden" name="_token" value="websitedevelopbymaoem">
-                        <div class="form-group">
-                            <label for="name" class="text-white">ឈ្មោះ</label>
-                            <input type="text" class="form-control form-control-sm mt-n2 footer-input" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="text-white">លេខទូរស័ព្ទ/អ៊ីមែល</label>
-
-                            <input type="text" class="form-control form-control-sm mt-n2 footer-input" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="text-white">សារបស់អ្នក</label>
-                            <textarea class="form-control form-control-sm mt-n2 footer-input" name="message" id="message" required></textarea>
-                        </div>
+                              <input type="hidden" name="_token" value="websitedevelopbymaoem">
+                              <div class="form-group">
+                                  <label for="name" class="text-white">ឈ្មោះ</label>
+                                  <input type="text" class="form-control form-control-sm mt-n2 footer-input" id="name" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="phone" class="text-white">លេខទូរស័ព្ទ/អ៊ីមែល</label>
+      
+                                  <input type="text" class="form-control form-control-sm mt-n2 footer-input" id="phone" name="phone" required      >
+                              </div>
+                              <div class="form-group">
+                                  <label for="message" class="text-white">សារបស់អ្នក</label>
+                                  <textarea class="form-control form-control-sm mt-n2 footer-input" name="message" id="message" required></      textarea>
+                              </div>
 
                         <button type="submit" class="btn btn-sm btn-light float-right footer-button-submit">បញ្ជូន</button>
                     </form>
@@ -825,55 +615,45 @@
         </div>
     </div>
 </div>
-        <style>
-    .align-value {
-        font-weight: bold;
-    }
-    .avatar {
-        border: 2px solid #EAA7A7;
-    }
-    .padding-modal-body {
-        padding-top: 25px;
-    }
-</style>
+
 <script>
     $(document).ready(function() {
         
         $("#btnUpdateProfile").on("click", function(e) {
-            e.preventDefault();
-
-            // Get form
-            var form = $('#frmEditProfile')[0];
-
-            // FormData object 
-            var data = new FormData(form);
-
-            // If you want to add an extra field for the FormData
-            data.append("_token", "A8aT12n1zvXL4wWSU37BwxlGpRM9qcYZZYpHA7lw");
-            data.append("user_id", "");
-
-            // disabled the submit button
-            $("#btnUpdateProfile").prop("disabled", true);
-
-            console.log("prepare data: " + data);
+                        e.preventDefault();
             
-            $.ajax({
-                url: 'https://www.happyfamilypawn.com/updated.html',
-                method: "POST",
-                enctype: 'multipart/form-data',
-                data: data,
-                // Tell jQuery not to process the sent data
-                processData : false, 
-                // Tell jQuery not to set the Content-Type request header
-                contentType : false,
-                dataType: 'JSON',
-                success: function (data) {
-                    console.log("SUCCESS : ", data);
-                    if (data.status === "success") {
+                        // Get form
+                        var form = $('#frmEditProfile')[0];
+            
+                        // FormData object 
+                        var data = new FormData(form);
+            
+                        // If you want to add an extra field for the FormData
+                        data.append("_token", "A8aT12n1zvXL4wWSU37BwxlGpRM9qcYZZYpHA7lw");
+                        data.append("user_id", "");
+            
+                        // disabled the submit button
+                        $("#btnUpdateProfile").prop("disabled", true);
+            
+                        console.log("prepare data: " + data);
+                        
+                        $.ajax({
+                        url: 'https://www.happyfamilypawn.com/updated.html',
+                        method: "POST",
+                        enctype: 'multipart/form-data',
+                        data: data,
+                        // Tell jQuery not to process the sent data
+                        processData : false, 
+                        // Tell jQuery not to set the Content-Type request header
+                        contentType : false,
+                        dataType: 'JSON',
+                        success: function (data) {
+                        console.log("SUCCESS : ", data);
+                        if (data.status === "success") {
                         $("#output").addClass("alert alert-success");
                         $("#output").text("Updated Successful");
                         $("#btnUpdateProfile").prop("disabled", false);
-                    } else {
+                        } else {
                         $("#output").addClass("alert alert-warning");
                         $("#output").text(data.data);
                         $("#btnUpdateProfile").prop("disabled", false);
