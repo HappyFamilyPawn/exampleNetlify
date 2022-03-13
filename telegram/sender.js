@@ -6,9 +6,9 @@ var u_name, email, message, phone;
 var ready = function () {
     u_name = document.getElementById("name").value;
     email = document.getElementById("email").value;
-    phone = document.getElementById("phone").value;
+    number = document.getElementById("number").value;
     message = document.getElementById("message").value;
-    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + phone;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + number;
 };
 var sender = function () {
     ready();
@@ -31,7 +31,7 @@ var sender = function () {
     });
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("phone").value = "";
+    document.getElementById("number").value = "";
     document.getElementById("message").value = "";
     return false;
 };
