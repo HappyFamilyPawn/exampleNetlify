@@ -17,20 +17,26 @@
             text-align: center;
             color: #ffbb38;;
          }
+         input[type=submit]{
+            text-align: center;
+         }
 
     </style>
 </head>
 <body>
     <div class="container">
             <h1> HPF Attendance </h1>
+            <div class="form-group">
             <form action="" onsubmit=" return sender()">
+            <label>Name:</label>
             <input type="text" name="name" id="name" placeholder="Your name" required class="form-control">
-            <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
+            <label>Staff ID:</label>
             <input type="number" name="number" id="number" placeholder="your contact" required class="form-control">
+            <label>Date and Time</label>
             <input type="date" id="date" name="date" class="form-control">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required class="form-control"></textarea>
             <input type="submit" value="Send" id="btn" class="btn btn-danger">
         </form>
+        </div>
     </div>
     <link rel="stylesheet" href="style.css">
     <script src="sender.js"></script>
