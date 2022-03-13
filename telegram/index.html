@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>HPF Finance Co.,Ltd</title>
 </head>
 <body>
-    <div class="form">
+    <div class="container">
         <form action="" onsubmit=" return sender()">
-            <input type="text" name="name" id="name" placeholder="Your name" required>
-            <input type="email" name="email" id="email" placeholder="Your email" required>
-            <input type="number" name="number" id="number" placeholder="your contact" required>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>
+            <input type="text" name="name" id="name" placeholder="Your name" required class="form-control">
+            <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
+            <input type="number" name="number" id="number" placeholder="your contact" required class="form-control">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required class="form-control"></textarea>
             <input type="submit" value="Send" id="btn">
         </form>
     </div>
