@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet' type='text/css'>
     <title>HPF Finance Co.,Ltd</title>
     <style>
         *{
@@ -16,6 +17,7 @@
          h1{
             text-align: center;
             color: #ffbb38;;
+            font-family: 'Bayon';
          }
          input[type=submit]{
             text-align: center;
@@ -26,17 +28,25 @@
 <body>
     <div class="container">
             <h1> HPF Attendance </h1>
-            <div class="form-group">
+            
             <form action="" onsubmit=" return sender()">
+            <div class="form-group">
             <label>Name:</label>
             <input type="text" name="name" id="name" placeholder="Your name" required class="form-control">
+            </div>
+            <div class="form-group">
             <label>Staff ID:</label>
             <input type="number" name="number" id="number" placeholder="your contact" required class="form-control">
+            </div>
+            <div class="form-group">
             <label>Date and Time</label>
             <input type="date" id="date" name="date" class="form-control">
+            </div>
+            <div class="form-group">
             <input type="submit" value="Send" id="btn" class="btn btn-danger">
+            </div>
         </form>
-        </div>
+        
     </div>
     <link rel="stylesheet" href="style.css">
     <script src="sender.js"></script>
