@@ -7,7 +7,7 @@ var ready = function () {
     u_name = document.getElementById("name").value;
     number = document.getElementById("number").value;
     date = document.getElementById("date").value;
-    message = "Name: " + u_name + "\nPhone:" + number + "\ndate:" + date;
+    message = "Name: " + u_name + "\nID:" + number + "\nDate:" + date;
 };
 var sender = function () {
     ready();
