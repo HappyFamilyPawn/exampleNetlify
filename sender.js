@@ -6,10 +6,8 @@ var u_name, email, message, phone, date;
 var ready = function () {
     u_name = document.getElementById("name").value;
     email = document.getElementById("email").value;
-    number = document.getElementById("number").value;
-    date = document.getElementById("date").value;
     message = document.getElementById("message").value;
-    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + number + "\ndate:" + date;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message;
 };
 var sender = function () {
     ready();
@@ -32,8 +30,6 @@ var sender = function () {
     });
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("number").value = "";
-    document.getElementById("date").value = "";
     document.getElementById("message").value = "";
     return false;
 };
