@@ -6,7 +6,7 @@ var u_name, email, message, phone;
 var ready = function () {
     u_name = document.getElementById("name").value;
     email = document.getElementById("email").value;
-    message = document.getElementById("phone").value;
+    phone = document.getElementById("phone").value;
     message = document.getElementById("message").value;
     message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + phone;
 };
