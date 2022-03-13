@@ -8,7 +8,7 @@ var ready = function () {
     email = document.getElementById("email").value;
     message = document.getElementById("phone").value;
     message = document.getElementById("message").value;
-    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + phone +;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message + "\nPhone:" + phone;
 };
 var sender = function () {
     ready();
