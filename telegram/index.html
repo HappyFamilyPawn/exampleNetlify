@@ -13,7 +13,7 @@
             margin: 10px;
             padding: 10px;
         }
-        form{
+        .container{
             padding: 10px;
         }
 
@@ -21,16 +21,16 @@
 </head>
 <body>
     <div class="container">
-        <fieldset> 
-            <legend>HPF Finance Register</legend>
             <form action="" onsubmit=" return sender()">
+            <fieldset> 
+            <legend>HPF Finance Register</legend>
             <input type="text" name="name" id="name" placeholder="Your name" required class="form-control">
             <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
             <input type="number" name="number" id="number" placeholder="your contact" required class="form-control">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required class="form-control"></textarea>
-            <input type="submit" value="Send" id="btn" class="btn btn-danger d-flex justify-content-center">
+            <input type="submit" value="Send" id="btn" class="btn btn-danger">
+            </fieldset>
         </form>
-    </fieldset>
     </div>
     <link rel="stylesheet" href="style.css">
     <script src="sender.js"></script>
