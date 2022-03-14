@@ -55,7 +55,7 @@
   color: skyblue;
 }
 
-.form form #name:focus, .form form #number:focus, .form form #date:focus, #sender:focus  {
+.form form #name:focus, .form form #number:focus, .form form #date:focus #sender:focus  {
   width: 52%;
 }
 
