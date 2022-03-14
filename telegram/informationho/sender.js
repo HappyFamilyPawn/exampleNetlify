@@ -6,8 +6,11 @@ var name, number, date;
 var ready = function () {
     name = document.getElementById("name").value;
     number = document.getElementById("number").value;
+    sender = document.getElementById("sender").value;
+    computerid = document.getElementById("computerid").value;
+    contact = document.getElementById("contact").value;
     date = document.getElementById("date").value;
-    message = "Name->:" + name + "\nID----->:" + number + "\nDate-->: " + date  + "\n------------------------";
+    message = "Name->:" + name + "\nID----->:" + number + "\nDate-->: " + date  + "\nSender:" + sender + " \nremark problem:" + computerid + "\ncontact" "\n------------------------";
 };
 var sender = function () {
     ready();
@@ -30,6 +33,9 @@ var sender = function () {
     });
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
+    document.getElementById("sender").value = "";
+    document.getElementById("computerid").value = "";
+    document.getElementById("contact").value = "";
     document.getElementById("date").value = "";
     return false;
 };
