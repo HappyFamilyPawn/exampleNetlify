@@ -43,7 +43,7 @@
           align-items: center;
 }
 
-.form form #name, .form form #number, #sender .form form #date {
+.form form #name, .form form #number, #sender, #computerid, #contact, .form form #date {
   width: 50%;
   background: transparent;
   border: none;
@@ -55,7 +55,7 @@
   color: skyblue;
 }
 
-.form form #name:focus, .form form #number:focus, .form form #date:focus #sender:focus  {
+.form form #name:focus, .form form #number:focus, .form form  #sender:focus, #computerid:focus, #contact:focus,  #date:focus {
   width: 52%;
 }
 
