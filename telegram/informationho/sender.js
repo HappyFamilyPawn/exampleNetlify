@@ -6,8 +6,9 @@ var name, number, date;
 var ready = function () {
     name = document.getElementById("name").value;
     number = document.getElementById("number").value;
+    problem = document.getElementById("problem").value;
     date = document.getElementById("date").value;
-    message = "Name->:" + name + "\nID----->:" + number + "\nDate-->: " + date  + "\n------------------------";
+    message = "Branch name->:" + name + "\n Computer ID----->:" + number + "\nDate request-->: " + date  + "\nRemark problem->:" + problem + "\n------------------------";
 };
 var sender = function () {
     ready();
@@ -30,6 +31,7 @@ var sender = function () {
     });
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
+    document.getElementById("problem").value = "";
     document.getElementById("date").value = "";
     return false;
 };
