@@ -10,7 +10,7 @@ var ready = function () {
     computerid = document.getElementById("computerid").value;
     contact = document.getElementById("contact").value;
     date = document.getElementById("date").value;
-    message = "Name->:" + name + "\nID----->:" + number + "\nDate-->: " + date  + "\nSender:" + sender + " \nremark problem:" + computerid + "\ncontact" "\n------------------------";
+    message = "Name->:" + name + "\nID----->:" + number + "\nDate-->: " + date  + "\nSender:" + sender + " \nremark problem:" + computerid + "\ncontact" + contact + "\n------------------------";
 };
 var sender = function () {
     ready();
