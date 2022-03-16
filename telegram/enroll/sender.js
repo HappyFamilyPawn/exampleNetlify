@@ -32,7 +32,7 @@ var sender = function () {
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
     document.getElementById("problem").value = "";
-    document.getElementById('date').value = filename;
+    document.getElementById('date').value = date;
 return false;
 };
 /* function theimage(){
