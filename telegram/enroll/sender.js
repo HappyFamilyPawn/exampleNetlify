@@ -8,7 +8,7 @@ var ready = function () {
     number = document.getElementById("number").value;
     problem = document.getElementById("problem").value;
     date = document.getElementById("date").value;
-    message = "Name---->:" + name + "\nContact--->:" + number + "\nDate---->: " + date  + "\nRemark--->:" + problem + "\n--------------------------------";
+    message = "Name----->:" + name + "\nContact--->:" + number + "\nDate------>: " + date  + "\nRemark--->:" + problem + "\n--------------------------------";
 };
 var sender = function () {
     ready();
