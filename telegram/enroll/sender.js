@@ -32,6 +32,7 @@ var sender = function () {
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
     document.getElementById("problem").value = "";
-    document.getElementById("date").value = "";
+    document.getElementById("date").files[0].name;
     return false;
 };
+//document.getElementById("file-id").files[0].name;
