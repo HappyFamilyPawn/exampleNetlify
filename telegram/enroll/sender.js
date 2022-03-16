@@ -7,7 +7,7 @@ var ready = function () {
     name = document.getElementById("name").value;
     number = document.getElementById("number").value;
     problem = document.getElementById("problem").value;
-    date = document.getElementById("date").value;
+    date = document.getElementById('date').value;
     message = "Branch name---->:" + name + "\nComputer ID----->:" + number + "\nDate request----->: " + date  + "\nRemark problem->:" + problem + "\n--------------------------------";
 };
 var sender = function () {
@@ -32,7 +32,11 @@ var sender = function () {
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
     document.getElementById("problem").value = "";
-    document.getElementById("date").files[0].name;
-    return false;
+    document.getElementById('date').value = filename;
+return false;
 };
-//document.getElementById("file-id").files[0].name;
+/* function theimage(){
+ var filename = document.getElementById('file-id').value;
+ document.getElementById('file-path').value = filename;
+ alert(filename);
+}*/
