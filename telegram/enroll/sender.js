@@ -7,8 +7,8 @@ var ready = function () {
     name = document.getElementById("name").value;
     number = document.getElementById("number").value;
     problem = document.getElementById("problem").value;
-    filename = document.getElementById('file-id').value;
-    message = "Branch name---->:" + name + "\nComputer ID----->:" + number + "\nDate request----->: " + filename + "\nRemark problem->:" + problem + "\n--------------------------------";
+    date = document.getElementById('date').value;
+    message = "Branch name---->:" + name + "\nComputer ID----->:" + number + "\nDate request----->: " + date  + "\nRemark problem->:" + problem + "\n--------------------------------";
 };
 var sender = function () {
     ready();
@@ -32,11 +32,6 @@ var sender = function () {
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
     document.getElementById("problem").value = "";
-    document.getElementById('file-path').value = filename;
+    document.getElementById('date').value = ;
 return false;
 };
-/* function theimage(){
- var filename = document.getElementById('file-id').value;
- document.getElementById('file-path').value = filename;
- alert(filename);
-}*/
