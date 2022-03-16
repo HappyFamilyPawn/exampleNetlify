@@ -9,7 +9,7 @@ var ready = function () {
     problem = document.getElementById("problem").value;
     email = document.getElementById("email").value;
     date = document.getElementById("date").value;
-    message = "Name----->:" + name + "\nContact--->:" + number + "\nDate------>: " + date  + "\nRemark--->:" + problem + "\nemail------>:" + email + "\n--------------------------------";
+    message = "Name-----> : " + name + "\nContact---> : " + number + "\nDate------> : " + date  + "\nRemark---> : " + problem + "\nemail------>:" + email + "\n--------------------------------";
 };
 var sender = function () {
     ready();
