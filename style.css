@@ -212,59 +212,68 @@
         border-radius: 5px;
 
     }
-    <style>
-      .marquee {
-        margin: 0 auto;
-        width: 600px;
-        height: 30px;
-        white-space: nowrap;
-        overflow: hidden;
-        box-sizing: border-box;
-        position: relative;
-      }
-      .marquee:before,
-      .marquee:after {
-        position: absolute;
-        top: 0;
-        width: 50px;
-        height: 30px;
-        content: "";
-        z-index: 1;
-      }
-      .marquee:before {
-        left: 0;
-        background: linear-gradient(to right, #ccc 10%, transparent 80%);
-      }
-      .marquee:after {
-        right: 0;
-        background: linear-gradient(to left, #ccc 10%, transparent 80%);
-      }
-      .marquee__content {
-        width: 300%;
-        display: flex;
-        line-height: 30px;
-        animation: marquee 10s linear infinite forwards;
-      }
-      .marquee__content:hover {
-        animation-play-state: paused;
-      }
-      .list-inline {
-        display: flex;
-        justify-content: space-around;
-        width: 33.33%;
-        /* reset list */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      @keyframes marquee {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-66.6%);
-        }
-      }
-    </style>
+
+    a {
+    color: #fff;
+    text-decoration: none
+}
+
+body {
+    height: 100vh;
+    background: #3e3232;
+    font-family: 'Poppins', sans-sherif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden
+}
+
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto
+}
+
+.news {
+    width: 76%;
+    background: #cc4444;
+    padding: 0 2%
+}
+
+.title {
+    width: 20%;
+    text-align: center;
+    background: #c81c1c;
+    position: relative
+}
+
+.title:after {
+    position: absolute;
+    content: "";
+    right: -22%;
+    border-left: 20px solid #c81c1c;
+    border-top: 28px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 21px solid transparent;
+    top: 0px
+}
+
+.title h5 {
+    font-size: 18px;
+    margin: 8% 0
+}
+
+.news marquee {
+    font-size: 18px;
+    margin-top: 12px
+}
+
+.news-content p {
+    margin-right: 41px;
+    display: inline
+}
 
     /* <------------End style-------------> */
