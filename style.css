@@ -207,8 +207,9 @@
     .padding-modal-body {
         padding-top: 25px;
     }
-    .maoem{
+    .container{
         background-color: lightblue;
+        border-radius: 5px;
     }
 
 
