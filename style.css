@@ -207,62 +207,10 @@
     .padding-modal-body {
         padding-top: 25px;
     }
-    .container{
-        background-color: #ffbb38;;
-        border-radius: 5px;
-
+    container{
+        background-color: #ffbb38;
+        border-radius: 8px;
     }
 
-    a {
-    color: #fff;
-    text-decoration: none
-}
-
-.ticker {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 50px;
-    margin: 0 auto
-}
-
-.news {
-    width: 76%;
-    background: #cc4444;
-    padding: 0 2%
-}
-
-.title {
-    width: 20%;
-    text-align: center;
-    background: #c81c1c;
-    position: relative
-}
-
-.title:after {
-    position: absolute;
-    content: "";
-    right: -22%;
-    border-left: 20px solid #c81c1c;
-    border-top: 28px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 21px solid transparent;
-    top: 0px
-}
-
-.title h5 {
-    font-size: 18px;
-    margin: 8% 0
-}
-
-.news marquee {
-    font-size: 18px;
-    margin-top: 12px
-}
-
-.news-content p {
-    margin-right: 41px;
-    display: inline
-}
 
     /* <------------End style-------------> */
