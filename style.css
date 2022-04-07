@@ -218,17 +218,6 @@
     text-decoration: none
 }
 
-body {
-    height: 100vh;
-    background: #3e3232;
-    font-family: 'Poppins', sans-sherif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    overflow: hidden
-}
-
 .ticker {
     display: flex;
     flex-wrap: wrap;
