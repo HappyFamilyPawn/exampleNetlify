@@ -57,8 +57,10 @@
     		padding: 50px;
 
     	}
-    	h3,h2,label,input{
+    	h3,h2,label,input,h1{
     		font-family: 'Bayon';
+            font-size: 20px;
+            margin: 10px;
     	}
     </style>
 <script>
@@ -74,7 +76,7 @@ function computeLoan(){
 </script>
 </head>
 <body>
-<center><h1>Daily Loan Calculate HPF</h1></center>
+<center><h1>អេច ភី អេហ្វ ហ្វាយនែន</h1></center>
 <div class="container">
 <label class="form-group">ចំនួនទឹកប្រាក់ដែលស្នើៈ</label>
 <input id="amount" type="number" class="form-control" placeholder="ចំនួនទឹកលុយ" onchange="computeLoan()">
@@ -82,6 +84,7 @@ function computeLoan(){
 <input id="interest_rate" type="number" class="form-control" placeholder="អត្រាការប្រាក់" onchange="computeLoan()">
 <label class="form-group">រយៈពេលត្រូវសងប្រាក់:</label>
 <input id="months" type="number" class="form-control" placeholder="ពេលវេលាបង់សង" onchange="computeLoan()">
+<input type="reset" name="reset" class="btn btn-danger">
 </div>
 <font color="red">
 	<center><h2>លុយដែលត្រូវបង់គឺ</h2></center>
@@ -96,7 +99,7 @@ function computeLoan(){
 </center>
 <center>
 	<hr color="gray">
-	<a href="https://www.happyfamilypawn.com/person/index4"><button onclick="myFunction()"><font color="blue" class="btn btn-primary">Click Me</font></button></a>
+	<a href="https://www.happyfamilypawn.com/person/index4"><input type="submit" class="btn btn-primary"></input></a>
 	<a>Report is created at 09:00 of November 22,2020</a>
 	</center>
 </body>
