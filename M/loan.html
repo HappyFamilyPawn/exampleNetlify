@@ -54,7 +54,8 @@
     		height: 70px;
     		border: solid red;
     		align-items: center;
-    		padding: 50px;
+    		padding: 20px;
+            font-size: 40px;
 
     	}
     	h3,h2,label,input,h1{
@@ -62,6 +63,10 @@
             font-size: 20px;
             margin: 5px;
     	}
+        .maoem{
+            font-size: 50px;
+            font-family: 'Bayon';
+        }
     </style>
 <script>
 function computeLoan(){
@@ -76,7 +81,7 @@ function computeLoan(){
 </script>
 </head>
 <body>
-<center><h1>អេច ភី អេហ្វ ហ្វាយនែន</h1></center>
+<center class="maoem">អេច ភី អេហ្វ ហ្វាយនែន</center>
 <div class="container">
 <label class="form-group">ចំនួនទឹកប្រាក់ដែលស្នើៈ</label>
 <input id="amount" type="number" class="form-control" placeholder="ចំនួនទឹកលុយ" onchange="computeLoan()">
@@ -87,7 +92,7 @@ function computeLoan(){
 <input type="reset" id="reset" class="btn btn-danger">
 </div>
 <font color="red">
-	<center><h2>លុយដែលត្រូវបង់គឺ</h2></center>
+	<center><h2>លុយដែលត្រូវបង់គឺ<h2></center>
 <center><h1 id="payment"></h1></center>
 </font>
 <center>
