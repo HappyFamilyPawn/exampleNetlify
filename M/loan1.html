@@ -87,25 +87,30 @@ function buildTable() {
     var payment = ((amount / numpay) + rate).toFixed(0);
     var total = payment;
     var interest = (amount * rate);
+    var payall = ((payment*1) + (interest*1));
 
     var msg = "<table border='1' width='100%'>";
     msg += "<tr>";
     msg += "<td>ចំនួនថ្ងៃ</td>";
     msg += "<td>ប្រាក់ដើម</td>";
     msg += "<td>ការប្រាក់</td>";
+    msg += "<td>សរុបបង់</td>";
     msg += "<td>ដើមនៅសល់</td>";
     msg += "</tr>";
 
     newPrincipal=amount;
+    reduction1=payall;
     var i = 1;
     while (i <= numpay) {
         newInterest=interest;
         reduction=payment;
+        reduction1=payall;
         newPrincipal=newPrincipal-reduction;
 
         msg += "<tr><td align='left' bgcolor='lightblue'>"+i+"</td> \
                 <td align='left' bgcolor='lightblue'>"+fixVal(reduction,0,' ')+"</td> \
                 <td align='left' bgcolor='lightblue'>"+fixVal(newInterest,0,' ')+" </td> \
+                <td align='left' bgcolor='lightblue'>"+fixVal(payall,0,' ')+" </td> \
                 <td align='left' bgcolor='lightblue'>"+fixVal(newPrincipal,0,' ')+" </td></tr>";
 
         i++;
