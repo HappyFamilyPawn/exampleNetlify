@@ -1,0 +1,185 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>ក្រុមហ៊ុន បញ្ចាំគ្រួសាររីករាយ</title>
+    <!-- Favicon -->
+<link rel="icon" href="https://www.happyfamilypawn.com/logo/favicon.ico">
+    <!-- Stylesheet -->
+    <meta name="description" content="">
+    <meta name="tags" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="A8aT12n1zvXL4wWSU37BwxlGpRM9qcYZZYpHA7lw">
+    <link href="https://fonts.googleapis.com/css?family=Hanuman:400,700&amp;subset=khmer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Moul&amp;subset=khmer" rel="stylesheet">
+
+    <!-- Favi icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favi/favicon-16x16.png">
+    <link rel="manifest" href="/images/favi/site.webmanifest">
+    <link rel="mask-icon" href="/images/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome 5.15.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Khmer font Kantumruy -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy&family=Khmer&display=swap" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script src="sender.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="maoem2.png">
+    <!-- Stylesheet -->
+<script type="text/javascript">
+
+ function fixVal(value,numberOfCharacters,numberOfDecimals,padCharacter) { 
+    var i, stringObject, stringLength, numberToPad;            
+
+    value = value * Math.pow(10,numberOfDecimals);                 
+    value = Math.round(value);                                   
+    stringObject = new String(value);                            
+    stringLength = stringObject.length;                          
+    while(stringLength < numberOfDecimals) {                     
+        stringObject = "0"+stringObject;                    
+        stringLength=stringLength+1;                      
+    }
+
+    if(numberOfDecimals>0) {                       
+        stringObject=stringObject.substring(0,stringLength-numberOfDecimals)+"."+
+        stringObject.substring(stringLength-numberOfDecimals,stringLength);
+    }
+
+    if (stringObject.length<numberOfCharacters && numberOfCharacters>0) {
+        numberToPad=numberOfCharacters-stringObject.length;      
+        for (i=0; i<numberToPad; i=i+1) {
+            stringObject=padCharacter+stringObject;
+        }
+    }
+
+    return stringObject;                                      
+}
+
+function buildTable() {
+
+    var amount=parseFloat(document.getElementById("loanAmt").value );
+    var numpay=parseInt(document.getElementById("monthlyPay").value );
+    var rate=parseFloat(document.getElementById("intRte").value );
+
+    rate = rate / 100;
+    var monthly = rate/100;
+    var payment = ((amount / numpay) + rate).toFixed(0);
+    var total = payment;
+    var interest = (amount * rate);
+
+    var msg = "<table border='1' width='100%'>";
+    msg += "<tr>";
+    msg += "<td>ចំនួនថ្ងៃ</td>";
+    msg += "<td>ប្រាក់ដើម</td>";
+    msg += "<td>ការប្រាក់</td>";
+    msg += "<td>ដើមនៅសល់</td>";
+    msg += "</tr>";
+
+    newPrincipal=amount;
+    var i = 1;
+    while (i <= numpay) {
+        newInterest=interest;
+        reduction=payment;
+        newPrincipal=newPrincipal-reduction;
+
+        msg += "<tr><td align='left' bgcolor='lightblue'>"+i+"</td> \
+                <td align='left' bgcolor='lightblue'>"+fixVal(reduction,0,' ')+"</td> \
+                <td align='left' bgcolor='lightblue'>"+fixVal(newInterest,0,' ')+" </td> \
+                <td align='left' bgcolor='lightblue'>"+fixVal(newPrincipal,0,' ')+" </td></tr>";
+
+        i++;
+    }
+
+
+    msg += "</table>";
+
+    document.getElementById("results").innerHTML = msg;
+
+
+}
+
+
+</script>
+<style type="text/css">
+    label,input{
+        font-family: 'Bayon';
+    }
+    #header{
+        font-family: 'Bayon';
+        font-size: 25px;
+        text-align: center;
+    }
+        table,tr,td,th,p{
+        font-family: 'Bayon';
+        text-align: center;
+    }
+    tr{
+        background-color:#ffbb38;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+
+<div id="contentwrap">
+
+<div id="header">ក្រុមហ៊ុន អេច ភី អេហ្វ ហ្វាយនែន</div>
+
+<form>
+<label class="form-group">ទឹកប្រាក់ស្នើរ</label>
+<div class="form-group">
+<input type="text" id="loanAmt" class="form-control" placeholder="ចំនួនលុយ">
+</div>
+
+<label class="form-group">ការប្រាក់</label>
+<div class="form-group">
+<input type="text" id="intRte" class="form-control" placeholder="ចំនួនការប្រាក់">
+</div>
+<label class="form-group">ចំនួនថ្ងៃស្នើរ</label>
+<div class="form-group">
+<input type="text" id="monthlyPay" class="form-control" placeholder="ចំនួនថ្ងៃស្នើរ">
+</div>
+
+
+<div style="margin-top:20px;">
+<input type="button" value="ចេញតារាងបង់" id="button" class="btn btn-primary" onClick="buildTable()">
+<input type="reset" value="ធ្វើម្តងទៀត" class="btn btn-danger">
+</div>
+
+</form>
+
+<center>
+<div id="results" style="margin-top:20px; padding: 20px;"></div>
+</center>
+<div class="form-group">
+    <p>Copyright@<a href="https://www.happyfamilypawn.com/person/index4.html" target="_blank">Mao Em</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
