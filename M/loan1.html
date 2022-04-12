@@ -7,7 +7,7 @@
     
     <title>ក្រុមហ៊ុន បញ្ចាំគ្រួសាររីករាយ</title>
     <!-- Favicon -->
-<link rel="icon" href="https://www.happyfamilypawn.com/logo/favicon.ico">
+   <link rel="icon" href="https://www.happyfamilypawn.com/logo/favicon.ico">
     <!-- Stylesheet -->
     <meta name="description" content="">
     <meta name="tags" content="">
@@ -47,7 +47,7 @@
     <!-- Favicon -->
     <link rel="icon" href="maoem2.png">
     <!-- Stylesheet -->
-<script type="text/javascript">
+    <script type="text/javascript">
 
  function fixVal(value,numberOfCharacters,numberOfDecimals,padCharacter) { 
     var i, stringObject, stringLength, numberToPad;            
@@ -88,6 +88,7 @@ function buildTable() {
     var total = payment;
     var interest = (amount * rate);
     var payall = ((payment*1) + (interest*1));
+    var totalprinciple = (interest*numpay);
 
     var msg = "<table border='1' width='100%'>";
     msg += "<tr>";
@@ -100,11 +101,13 @@ function buildTable() {
 
     newPrincipal=amount;
     reduction1=payall;
+    totalprinciplenew=totalprinciple;
     var i = 1;
     while (i <= numpay) {
         newInterest=interest;
         reduction=payment;
         reduction1=payall;
+        totalprinciplenew=totalprinciple;
         newPrincipal=newPrincipal-reduction;
 
         msg += "<tr><td align='left' bgcolor='lightblue'>"+i+"</td> \
@@ -120,6 +123,7 @@ function buildTable() {
     msg += "</table>";
 
     document.getElementById("results").innerHTML = msg;
+    document.getElementById("total_interest").innerHTML = totalprinciple +"៛";
 
 
 }
@@ -148,6 +152,18 @@ function buildTable() {
         border: solid blue;
         padding: 10px;
         margin: 3px;
+    }
+    #total_interest{
+
+        font-family: 'Bayon';
+        color: red;
+        margin: 10px;
+        padding: 10px;
+    }
+    .total_interest{
+        width: 200px;
+        height: 80px;
+        border: solid blue;
     }
 
 </style>
@@ -201,10 +217,13 @@ function buildTable() {
       </div>
     </form>
     </div>
-
 </form>
 
 <center>
+    <label class="form-group">ការប្រាក់សរុប</label>
+<div class="total_interest">
+    <h1 id="total_interest"></h1>
+</div>
 <div id="results" style="margin-top:20px; padding: 20px;"></div>
 </center>
 <div class="form-group">
@@ -212,6 +231,5 @@ function buildTable() {
 </div>
 </div>
 </div>
-<script src="index.js"></script>
 </body>
 </html>
